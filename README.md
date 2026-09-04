@@ -1,137 +1,49 @@
 # 👋 Moin, ich bin Mario
 
-### Java Backend · Spring Boot · Python · Cloud · Softwarearchitektur
+### Java Backend · Spring Boot · Python · Cloud
 
 Ich studiere **Angewandte Informatik an der HAW Hamburg** und stehe kurz vor meinem Bachelorabschluss.
 
-Parallel entwickle und betreue ich bei **one.O innerhalb der Otto Group** produktive Anwendungen und Webcrawler mit **Java, Spring und Spring Boot**. Dabei arbeite ich unter anderem mit bestehenden Codebasen, Schnittstellen, Cloud-Infrastruktur, Docker, Linux, CI/CD und Monitoring.
-
-Mein beruflicher Schwerpunkt liegt auf **Backend-Entwicklung mit Java und Spring Boot**.  
-In meinen eigenen Projekten beschäftige ich mich aktuell verstärkt mit **Python, Cloud-Architekturen, verteilten Systemen, Automatisierung und Softwarearchitektur**.
+Beruflich entwickle und betreue ich bei **one.O innerhalb der Otto Group** produktive Anwendungen und Webcrawler mit **Java, Spring und Spring Boot**.  
+In meinen eigenen Projekten beschäftige ich mich aktuell verstärkt mit **Python, Cloud-Architekturen und Softwarearchitektur**.
 
 ---
 
-## 👨‍💻 Über mich
+## 🛠️ Tech Stack
 
-- 💼 Praktische Erfahrung mit produktiven **Java-/Spring-Boot-Anwendungen**
-- ☁️ Berufliche Cloud-Praxis mit **Google Cloud Platform**
-- 🐳 Erfahrung mit **Docker, Linux und CI/CD**
-- 🐍 Aktuell vertiefe ich gezielt meine Kenntnisse in **Python und FastAPI**
-- 🏗️ Interesse an **Softwarearchitektur, verteilten und event-getriebenen Systemen**
-- 🔐 Bei eigenen Projekten spielen **Security und Privacy by Design** eine wichtige Rolle
-- 🎓 B.Sc. Angewandte Informatik – Abschluss voraussichtlich 2026
-- 📍 Hamburg
+**Backend:** `Java` · `Spring Boot` · `Python` · `FastAPI`  
+**Cloud & DevOps:** `GCP` · `AWS` · `Docker` · `Linux` · `Terraform` · `CI/CD`  
+**Daten:** `SQL` · `BigQuery` · `DynamoDB`  
+**Weitere:** `Kafka` · `TypeScript` · `Angular` · `JUnit` · `pytest`
 
 ---
 
-## 🛠️ Technologien
+## 🚀 Projekte
 
-### Beruflicher Schwerpunkt
+### 🏠 [HomeFlow](https://github.com/mariohansen/homeflow)
+Local-first Smart-Home-Gateway mit **Python, FastAPI, WebSockets und Docker**.  
+Fokus auf modulare Geräteintegration, Security und Privacy by Design.
 
-`Java` · `Spring` · `Spring Boot` · `REST APIs` · `JUnit`
+### 🔎 [JobRadar](https://github.com/mariohansen/JobRadar)
+Event-getriebene Pipeline zur automatisierten Verarbeitung von Stellenanzeigen.  
+`Python` · `AWS` · `Terraform` · `Kafka` · `DynamoDB` · `S3`
 
-### Cloud & DevOps
-
-`GCP` · `Docker` · `Linux` · `GitLab CI/CD` · `Git` · `Maven`
-
-### Daten & Monitoring
-
-`SQL` · `Google BigQuery` · `Grafana` · `Cloud Logging` · `JSON` · `XML`
-
-### Aktuell im Fokus
-
-`Python` · `FastAPI` · `AWS` · `Terraform` · `Kafka` · `DynamoDB`
-
-### Weitere Erfahrung
-
-`TypeScript` · `JavaScript` · `Angular` · `GitHub` · `Jira` · `Confluence`
+### 🔀 [Workflow Studio](https://github.com/mariohansen/Workflow)
+Visueller Workflow-Editor mit **Angular, TypeScript, Python und FastAPI**.
 
 ---
 
-# 🚀 Projekte
+## 🎯 Fokus
 
-Meine öffentlichen Projekte nutze ich vor allem, um Technologien und Architekturkonzepte außerhalb meines beruflichen Java-/Spring-Schwerpunkts praktisch umzusetzen.
+Aktuell vertiefe ich insbesondere:
 
-## 🏠 HomeFlow
-
-**Local-first Smart-Home-Gateway mit einer einheitlichen API für unterschiedliche Geräte und Hersteller.**
-
-HomeFlow entstand aus der Idee, Geräte wie Pool, Beleuchtung, Lautsprecher, Türschloss oder Haushaltsgeräte nicht über zahlreiche Hersteller-Apps, sondern über eine gemeinsame Schnittstelle und Anwendung zu steuern.
-
-### Schwerpunkte
-
-- Python + FastAPI
-- REST API und WebSockets
-- Adapterbasierte Integration unterschiedlicher Geräte
-- Local-first Architektur
-- Security & Privacy by Design
-- Authentifizierung und Autorisierung
-- Auditierung und Rate Limiting
-- Docker
-- automatisierte Tests
-- Architekturentscheidungen über ADRs dokumentiert
-
-Die erste reale Geräteintegration steuert einen **Bestway AirJet Pool lokal über dessen Netzwerkprotokoll**. Weitere Geräte werden über eine einheitliche Domain- und Capability-Struktur abstrahiert.
-
-**Technologien:**  
-`Python` · `FastAPI` · `WebSockets` · `Docker` · `pytest` · `Pyright` · `Ruff`
-
-[→ HomeFlow Repository](/mariohansen/homeflow)
-
----
-
-## 🔎 JobRadar
-
-**Event-getriebene Pipeline zur automatisierten Suche, Filterung und Verwaltung von Stellenanzeigen.**
-
-JobRadar sammelt Stellenanzeigen aus mehreren Quellen, normalisiert und dedupliziert sie, bewertet sie anhand eines Fähigkeitsprofils und verschickt passende Ergebnisse automatisiert per E-Mail.
-
-Zusätzlich verwaltet ein Tracker Bewerbungen und ermöglicht die spätere Auswertung der Ergebnisse.
-
-### Architektur
-
-```text
-Stellenbörsen
-     │
-     ▼
- AWS Lambda
-     │
-     ▼
-   Kafka
-     │
-     ▼
-Filter & Deduplizierung
-  │             │
-  ▼             ▼
-DynamoDB        S3
-     │
-     ▼
-   Kafka
-     │
-     ▼
- Notifier
-     │
-     ▼
-  AWS SES
-```
-
-## 🎯 Wohin ich mich entwickeln möchte
-
-Für meinen Berufseinstieg möchte ich meinen Schwerpunkt auf **Backend- und Softwareentwicklung mit Java/Spring Boot** weiter ausbauen.
-
-Besonders interessieren mich Systeme, bei denen Entwicklung nicht bei der Implementierung eines Features endet, sondern auch Themen wie
-
-`Architektur` · `Cloud` · `Betrieb`
-
-eine Rolle spielen.
-
-Gleichzeitig baue ich **Python** aktuell gezielt als zweite Backend-Sprache aus.
+`Java / Spring Boot` · `Python / FastAPI` · `Softwarearchitektur` · `Cloud` · `Event-driven Systems`
 
 ---
 
 ## 📫 Kontakt
 
-Für berufliche Anfragen oder Fragen zu meinen Projekten erreichst du mich gerne per E-Mail:
+Für berufliche Anfragen oder Fragen zu meinen Projekten:
 
 📧 **[mariohansen@live.de](mailto:mariohansen@live.de)**  
 📍 Hamburg
